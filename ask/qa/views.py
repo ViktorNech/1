@@ -1,3 +1,6 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+from django.http import HttpResponse, Http404
+
+# Create your views here.
 def test(request, *args, **kwargs):
-	return HttpResponse('OK')
+    return HttpResponse('OK', status=200)
